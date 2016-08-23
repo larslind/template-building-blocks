@@ -91,7 +91,7 @@
         "extensions": [
           {
             "name": "nva-config-ext",
-            "settingsMapperUri": "https://pnparmtest.blob.core.windows.net/kirpas/buildingBlocks/nvas-ntier-network/extensions/nvas-ntier-settings-mapper.json",
+            "settingsMapperUri": "https://raw.githubusercontent.com/mspnp/template-building-blocks/kirpas/bb-nva/templates/buildingBlocks/nvas-ntier-network/nvas-ntier-settings-mapper.json",
             "publisher": "Microsoft.Compute",
             "type": "CustomScriptExtension",
             "typeHandlerVersion": "1.8",
