@@ -95,7 +95,8 @@
             "publisher": "Microsoft.Compute",
             "type": "CustomScriptExtension",
             "typeHandlerVersion": "1.8",
-            "autoUpgradeMinorVersion": true
+            "autoUpgradeMinorVersion": true,
+            "properties": [ ]
           }
         ]
       }
