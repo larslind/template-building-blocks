@@ -11,7 +11,7 @@
             "loadBalancerType": "internal",
             "internalLoadBalancerSettings": {
               "privateIPAddress": "10.0.1.250",
-              "subnetName": "app1-in-sn"
+              "subnetName": "bb-nva-in-sn"
             }
           }
         ],
