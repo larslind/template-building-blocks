@@ -96,7 +96,7 @@
             "type": "CustomScriptExtension",
             "typeHandlerVersion": "1.8",
             "autoUpgradeMinorVersion": true,
-            "properties": [ ]
+            "properties": { }
           }
         ]
       }
