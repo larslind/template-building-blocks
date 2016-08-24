@@ -55,7 +55,7 @@
         "nics": [
           {
             "isPublic": "false",
-            "subnetName": "app1-in-sn",
+            "subnetName": "bb-nva-in-sn",
             "privateIPAllocationMethod": "static",
             "startingIPAddress": "10.0.1.242",
             "isPrimary": "true",
@@ -64,7 +64,7 @@
           },
           {
             "isPublic": "false",
-            "subnetName": "app1-out-sn",
+            "subnetName": "bb-nva-out-sn",
             "privateIPAllocationMethod": "dynamic",
             "isPrimary": "false",
             "enableIPForwarding": true,
@@ -86,11 +86,11 @@
         },
         "availabilitySet": {
           "useExistingAvailabilitySet": "No",
-          "name": "ra-nva-as"
+          "name": "bb-nva-as"
         },
         "extensions": [
           {
-            "name": "nva-config-ext",
+            "name": "bb-nva-config-ext",
             "settingsMapperUri": "https://raw.githubusercontent.com/mspnp/template-building-blocks/kirpas/bb-nva/templates/buildingBlocks/nvas-ntier-network/nvas-ntier-settings-mapper.json",
             "publisher": "Microsoft.OSTCExtensions",
             "type": "CustomScriptForLinux",
@@ -103,7 +103,7 @@
     },
     "virtualNetworkSettings": {
       "value": {
-        "name": "app1-vnet",
+        "name": "bb-nva-vnet",
         "resourceGroup": "bb-nva-rg"
       }
     },
@@ -120,12 +120,12 @@
         {
           "name": "bb-nva-gw-rt",
           "subnets": [
-            "app1-out-sn"
+            "GatewaySubnet"
           ],
           "routes": [
             {
               "name": "route1",
-              "addressPrefix": "10.0.2.0/24",
+              "addressPrefix": "10.0.3.0/24",
               "nextHopType": "VirtualAppliance",
               "nextHopIpAddress": "10.0.255.224"
             }
