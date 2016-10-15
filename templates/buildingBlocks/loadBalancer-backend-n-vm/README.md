@@ -196,6 +196,7 @@ The virtualMachinesSettings parameter contains the configuration settings the bl
   - **publicIPAllocationMethod** - How is IP address assigned on private network?  ("Static" / "Dynamic")
   - **startingIPAddress** - If private IP is static, this is the IP assigned to this NIC on the first VM created. Additional VMs will increment this address by one.  
   - **enableIPForwarding** - Required. Enable IP forwarding for this NIC? (true / false) 
+  - **domainNameLablePrefix** - Optional. Specifies the DNS prefix for the public IP, if allocated.
   - **dnsServers** - Required. Defines one or more custom DNS Server adresses of the NIC. Leave blank to use Azure internal name resolution. 
  
 			"dnsServers": [ ] 
